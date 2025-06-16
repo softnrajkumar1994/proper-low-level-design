@@ -14,7 +14,7 @@ public class LoadBalancerDemo {
             serverList.add(new Server(String.valueOf(i)));
         }
 
-        LoadBalancingStrategy strategy = new LBRoundRobinStrategy(serverList);
+        LoadBalancingStrategy strategy = new LBLeastRequestStrategy(serverList);
         LoadBalancer loadBalancer = new LoadBalancer("lb1", strategy, serverList);
 
         List<String> questions = List.of(

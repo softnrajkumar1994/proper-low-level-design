@@ -2,12 +2,12 @@ package com.loadbalancer;
 
 import java.util.*;
 
-public class LBRoundRobinStrategy implements LoadBalancingStrategy {
+public class LBLeastRequestStrategy implements LoadBalancingStrategy {
     private final Map<Server, Integer> numOfRequestsHandled;
     private final List<Server> servers;
     private final PriorityQueue<Server> serverPriorityQueue;
 
-    public LBRoundRobinStrategy(List<Server> serverList) {
+    public LBLeastRequestStrategy(List<Server> serverList) {
         this.numOfRequestsHandled = new HashMap<>();
         this.servers = serverList;
 
