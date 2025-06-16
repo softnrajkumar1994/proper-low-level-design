@@ -40,7 +40,7 @@ public class SnakeAndLadderGame {
 
     private static void initializePlayers(Match match) {
         for (Player player : match.getPlayerList()) {
-            match.getBoard().getPlayerPositionHashMap().put(player, -1);  // Not entered yet
+            match.getBoard().getPlayerPositionHashMap().put(player, -1);
         }
     }
 
@@ -49,7 +49,7 @@ public class SnakeAndLadderGame {
     }
 
     private static boolean isValidMove(int currentPos, int roll, int maxPos) {
-        if (currentPos == -1 && roll != 1) return false; // Must roll 1 to enter
+        if (currentPos == -1 && roll != 1) return false;
         return (currentPos + roll) <= maxPos;
     }
 

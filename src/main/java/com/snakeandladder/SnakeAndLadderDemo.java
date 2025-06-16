@@ -8,7 +8,7 @@ public class SnakeAndLadderDemo {
         Board board = new Board("Board_1", 100);
         Match match = new Match("Match_1");
 
-        List<Player> players = SnakeAndLadderGame.createPlayers(2);
+        List<Player> players = SnakeAndLadderGame.createPlayers(5);
         board.setSnakes(SnakeAndLadderGame.createSnakes());
         board.setLadders(SnakeAndLadderGame.createLadders());
 
