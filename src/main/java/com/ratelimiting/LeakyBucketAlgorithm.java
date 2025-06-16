@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class LeakyBucketAlgorithm implements RateLimiter {
 
-    private final AtomicInteger bucket;
+    private final AtomicInteger bucket ;
     private final int capacity;
     private final ScheduledThreadPoolExecutor scheduledThreadPoolExecutor;
 
