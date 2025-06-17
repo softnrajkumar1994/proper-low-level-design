@@ -1,4 +1,16 @@
 package com.loggingframework;
 
-public class FileAppender {
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+public class FileAppender extends Appender {
+    @Override
+    public void append(LogMessage logMessage) {
+
+    }
 }
