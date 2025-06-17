@@ -7,7 +7,6 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Builder
 @NoArgsConstructor
 public class Match {
     private Innings firstInnings;
@@ -16,4 +15,10 @@ public class Match {
     private Team team1;
     private Team team2;
     private Team winner;
+    private MatchType matchType;
+
+    public Match(MatchType matchType) {
+        this.matchType = matchType;
+        this.matchStatus = MatchStatus.NOT_STARTED;
+    }
 }

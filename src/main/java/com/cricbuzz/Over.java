@@ -1,13 +1,23 @@
 package com.cricbuzz;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
-@Builder
+@NoArgsConstructor
 public class Over {
-    private Innings innings;
     private int overId;
+    private Innings innings;
+    private Player bowler;
+    private List<Ball> balls;
+
+    public Over(int overId, Innings innings, Player bowler) {
+        this.overId = overId;
+        this.innings = innings;
+        this.bowler = bowler;
+        this.balls = new ArrayList<>();
+    }
 }

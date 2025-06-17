@@ -1,5 +1,5 @@
 package com.cricbuzz;
 
 public enum MatchStatus {
-    DRAW, END, IN_PROGRESS
+    NOT_STARTED, DRAW, END, IN_PROGRESS
 }

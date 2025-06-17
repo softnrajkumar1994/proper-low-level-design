@@ -1,5 +1,7 @@
 package com.cricbuzz;
 
 public enum BallResult {
-    ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, WICKET
+    ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, WICKET;
+
+
 }
