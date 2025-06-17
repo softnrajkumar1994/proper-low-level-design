@@ -13,6 +13,7 @@ public class LoadBalancer {
     private List<Server> serverList;
     private LoadBalancingStrategy strategy;
 
+
     public LoadBalancer(String id, LoadBalancingStrategy strategy, List<Server> servers) {
         this.id = id;
         this.strategy = strategy;
