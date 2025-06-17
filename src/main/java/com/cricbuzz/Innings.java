@@ -7,7 +7,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @Builder
-public class Over {
-    private Innings innings;
-    private int overId;
+public class Innings {
+    private Team battingTeam;
+    private Team bowlingTeam;
+    private int id;
 }

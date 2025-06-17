@@ -1,4 +1,4 @@
 package com.cricbuzz;
 
-public class Innnings {
+public class Team {
 }

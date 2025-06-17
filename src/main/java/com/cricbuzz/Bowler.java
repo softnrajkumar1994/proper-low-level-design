@@ -1,4 +1,4 @@
 package com.cricbuzz;
 
-public class Bowler {
+public class Bowler extends Player {
 }
