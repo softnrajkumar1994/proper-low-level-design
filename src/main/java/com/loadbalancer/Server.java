@@ -21,7 +21,7 @@ public class Server {
 
         responseMap.put("What is your name", id + " responds as: Rajkumar");
         responseMap.put("What is your age", id + " responds as: 30");
-        responseMap.put("attack", id + " down");
+        responseMap.put("attack", id + "down");
     }
 
     public void markServerDown() {
