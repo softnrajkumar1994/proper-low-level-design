@@ -1,5 +1,10 @@
 package com.loggingframework;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class LoggingConfig {
     private static LoggingConfig loggingConfig;
     private LogLevel logLevel;

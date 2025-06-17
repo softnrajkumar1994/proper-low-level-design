@@ -9,24 +9,28 @@ import java.util.HashMap;
 
 @Getter
 @Setter
-public class LoggerFactory<T> {
-    private HashMap<T, Logger> loggers;
-    private LoggerFactory loggerFactory;
-    private Logger rootLogger;
+public class LoggerFactory {
+    private static HashMap<String, Logger> loggers;
+    private static LoggerFactory loggerFactory;
+    private static Logger rootLogger;
+
+    static {
+        if (loggerFactory == null) {
+            loggerFactory = new LoggerFactory();
+        }
+
+    }
 
     private LoggerFactory() {
         loggers = new HashMap<>();
         rootLogger = new Logger("root");
     }
 
-    public synchronized LoggerFactory getLoggerFactory() {
-        if (loggerFactory == null) {
-            loggerFactory = new LoggerFactory();
+    public static Logger getLogger(String loggerStr) {
+        if (!loggers.containsKey(loggerStr)) {
+            Logger logger = new Logger(loggerStr);
+            loggers.put(loggerStr, logger);
         }
-        return loggerFactory;
-    }
-
-    public Logger getLogger(T loggerStr) {
         return loggers.getOrDefault(loggerStr, rootLogger);
     }
 
