@@ -7,7 +7,7 @@ public class TicTacToeDemo {
         Player player2 = new Player("p2", Symbol.X);
 
         int i = 1;
-        while (true && i < 50) {
+        while (true && i < 5) {
             System.out.println("\nStarting Match " + i);
             Board board = new Board(3); // ✅ NEW board for each match
             Match match = new Match("m" + i, board, player1, player2);
