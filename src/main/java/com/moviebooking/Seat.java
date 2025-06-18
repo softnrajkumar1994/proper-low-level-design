@@ -1,6 +1,7 @@
 package com.moviebooking;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,4 +12,10 @@ import lombok.Setter;
 public class Seat {
     private String seatId;
     private Screen screen;
+
+    public Seat(String seatId, Screen screen) {
+        this.screen = screen;
+        this.seatId = seatId;
+    }
+
 }

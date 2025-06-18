@@ -13,4 +13,8 @@ import java.util.List;
 public class Theatre {
     private String theatreName;
     private List<Screen> screenList;
+
+    public Theatre(String theatreName) {
+        this.theatreName = theatreName;
+    }
 }

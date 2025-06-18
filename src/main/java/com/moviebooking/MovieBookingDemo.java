@@ -1,8 +1,12 @@
 package com.moviebooking;
 
 public class MovieBookingDemo {
-    public  static void main(String args[]){
-
+    public static void main(String args[]) {
+        Theatre theatre = new Theatre("PVR Cinemas");
+        int numOfScreen = 5;
+        for (int i = 0; i < numOfScreen; i++) {
+            theatre.getScreenList().add(new Screen("Screen_" + i, theatre, 50));
+        }
     }
 }
 /*
