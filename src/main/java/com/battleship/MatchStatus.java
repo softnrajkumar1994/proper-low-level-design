@@ -1,4 +1,5 @@
 package com.battleship;
 
-public class MatchStatus {
+public enum MatchStatus {
+    NOT_STARTED, ENDED, IN_PROGRESS;
 }
