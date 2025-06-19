@@ -17,4 +17,10 @@ public class Movie {
     private Producer producer;
     private Integer duration;
     private List<Actor> actorList;
+
+    public Movie(String movieName, Language language, Integer duration) {
+        this.movieName = movieName;
+        this.language = language;
+        this.duration = duration;
+    }
 }

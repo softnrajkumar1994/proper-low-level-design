@@ -7,6 +7,17 @@ public class MovieBookingDemo {
         for (int i = 0; i < numOfScreen; i++) {
             theatre.getScreenList().add(new Screen("Screen_" + i, theatre, 50));
         }
+
+        Theatre theatre1 = new Theatre("AGS Cinemas");
+        numOfScreen = 5;
+        for (int i = 0; i < numOfScreen; i++) {
+            theatre1.getScreenList().add(new Screen("Screen_" + i, theatre1, 50));
+        }
+
+        Movie movie = new Movie("Pirates of the carribean", Language.ENGLISH, 150);
+        Movie movie1 = new Movie("Robot", Language.TAMIL, 180);
+
+
     }
 }
 /*

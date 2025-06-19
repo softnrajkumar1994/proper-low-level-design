@@ -14,4 +14,7 @@ public class MovieBookingService {
         return instance;
     }
 
+    public void addShows(Theatre theatre, Movie movie){
+
+    }
 }
