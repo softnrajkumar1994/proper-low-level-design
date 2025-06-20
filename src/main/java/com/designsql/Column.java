@@ -1,17 +1,14 @@
 package com.designsql;
 
-
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.List;
+import lombok.experimental.StandardException;
 
 @Getter
 @Setter
 @NoArgsConstructor
-public class Table {
-    private String name;
-    private List<Column> columns;
-    private List<Row> rows;
+public class Column {
+    private String columnName;
+    private ColumnType dataType;
 }
