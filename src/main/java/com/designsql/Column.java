@@ -11,4 +11,9 @@ import lombok.experimental.StandardException;
 public class Column {
     private String columnName;
     private ColumnType dataType;
+
+    public Column(String columnName, ColumnType dataType) {
+        this.columnName = columnName;
+        this.dataType = dataType;
+    }
 }

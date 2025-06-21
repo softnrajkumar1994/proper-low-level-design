@@ -14,4 +14,5 @@ public class Table {
     private String name;
     private List<Column> columns;
     private List<Row> rows;
+
 }
